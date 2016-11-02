@@ -8,6 +8,7 @@ body {
 }
 
 #intro {
+    background: url(images/JP002_mini.jpeg) 50% 0 no-repeat fixed;
     background-size: cover;
     color: white;
     height: 100vh;
@@ -16,6 +17,7 @@ body {
 }
 
 #second {
+    background: url(images/JP003_mini.jpeg) 50% 0 no-repeat fixed;
     background-size: cover;
     color: white;
     height: 100vh;
@@ -24,7 +26,7 @@ body {
 }
 
 #third {
-    /*background: url(images/JP003_mini.jpeg) 50% 0 no-repeat fixed;*/
+    background: url(images/JP004_mini.jpeg) 50% 0 no-repeat fixed;
     background-size: cover;
     color: white;
     height: 100vh;
