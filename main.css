@@ -1,0 +1,32 @@
+body {
+    background: url(images/JP001_mini.jpeg) 50% 0 no-repeat fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#intro {
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#second {
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#third {
+    /*background: url(images/JP003_mini.jpeg) 50% 0 no-repeat fixed;*/
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    padding: 100 px 0 0 0;
+}
