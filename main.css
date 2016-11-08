@@ -1,44 +1,5 @@
-/*body {
-    /*background: url(images/JP001_mini.jpeg) 50% 0 no-repeat fixed;*/
-
-
-/*background-size: cover;
-    color: pink;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-}*/
-
-
-/*** More variables not shown here.. ***/
-
 html, body {
     height: 100%;
-}
-
-.height-100 {
-    height: 100%;
-    border: 1px blue solid;
-}
-
-#a {
-    background: #FF5;
-}
-
-#b {
-    background: #F5F;
-}
-
-#c {
-    background: #5FF;
-}
-
-.navbar-custom .nav li a {
-    transition: background .3s ease-in-out;
-}
-
-.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
-    background-color: rgba(100, 255, 100, 1);
 }
 
 #intro {
