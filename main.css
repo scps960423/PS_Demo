@@ -2,6 +2,22 @@ html, body {
     height: 100%;
 }
 
+
+/*.test {
+    background: #434343;
+}
+*/
+
+.test:hover {
+    background: #efebe9;
+    font-color: #795548;
+    /* 當滑鼠經過時，背景顏色改變 */
+}
+
+a:hover {
+    color: #795548;
+}
+
 #intro {
     background: url(images/JP002_mini.jpeg) 50% 0 no-repeat fixed;
     background-size: cover;
