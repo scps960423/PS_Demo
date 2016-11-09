@@ -2,15 +2,24 @@ html, body {
     height: 100%;
 }
 
-
-/*.test {
-    background: #434343;
+.collapsed:hover {
+    background: #ffcc99;
 }
-*/
 
 .test:hover {
-    background: #efebe9;
-    font-color: #795548;
+    background: #a1887f;
+    margin: 0 px;
+    padding: 0 px;
+    /* 當滑鼠經過時，背景顏色改變 */
+}
+
+.test {
+    margin: 0 px;
+    padding: 0 px;
+}
+
+#hello:hover {
+    background: #a1887f;
     /* 當滑鼠經過時，背景顏色改變 */
 }
 
@@ -19,7 +28,8 @@ a:hover {
 }
 
 #intro {
-    background: url(images/JP002_mini.jpeg) 50% 0 no-repeat fixed;
+    /*background: url(images/JP002_mini.jpeg) 50% 0 no-repeat fixed;*/
+    background-color: #ffcc99;
     background-size: cover;
     color: white;
     height: 100vh;
