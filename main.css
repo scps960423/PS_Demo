@@ -1,4 +1,4 @@
-html, body {
+＊ {
     height: 100%;
 }
 
@@ -13,11 +13,6 @@ html, body {
     /* 當滑鼠經過時，背景顏色改變 */
 }
 
-.test {
-    margin: 0 px;
-    padding: 0 px;
-}
-
 #hello:hover {
     background: #a1887f;
     /* 當滑鼠經過時，背景顏色改變 */
@@ -27,29 +22,35 @@ a:hover {
     color: #795548;
 }
 
-#intro {
-    /*background: url(images/JP002_mini.jpeg) 50% 0 no-repeat fixed;*/
+#home {
     background-color: #ffcc99;
     background-size: cover;
-    color: white;
     height: 100vh;
-    margin: 0 auto;
-    padding: 0;
 }
 
 #second {
-    background: url(images/JP003_mini.jpeg) 50% 0 no-repeat fixed;
+    background-color: #ffcc99;
     background-size: cover;
-    color: white;
     height: 100vh;
-    margin: 0 auto;
-    padding: 0;
 }
 
 #third {
-    background: url(images/JP004_mini.jpeg) 50% 0 no-repeat fixed;
+    background-image: url(images/pag_3.jpg);
+    opacity: 0.7;
     background-size: cover;
     color: white;
     height: 100vh;
     padding: 100 px 0 0 0;
+}
+
+#forth {
+    background-image: url(images/pag_4.jpg);
+    opacity: 0.7;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    /*padding: 100 px 0 0 0;*/
+}
+
+
 }
