@@ -5,22 +5,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coffee Parallax Scrolling</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="jquery-parallax-1/scripts/jquery.localscroll-1.2.7-min.js"></script>
-    <script src="jquery-parallax-1/scripts/jquery.parallax-1.1.3.js"></script>
-    <script src="jquery-parallax-1/scripts/jquery.scrollTo-1.4.2-min.js"></script>
+    <title>Coffee Parallax Scrolling</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css"> -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
     <script type="text/javascript">
-        $(#intro).parallax("50%", 0.1);
-        $(#second).parallax("50%", 0.1);
-        $(#forth).parallax("50%", 0.1);
-        $(#third).parallax("50%", 0.3);
+        $(document).ready(function() {
+            $('#home').parallax("50%", 0.1);
+            $('#second').parallax("50%", 0.1);
+            $('#third').parallax("50%", 0.1);
+            $('#forth').parallax("50%", 0.3);
+        });
     </script>
+
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -32,10 +37,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/locate.css">
 </head>
 
 <body>
-
     <nav class="navbar-default navbar-fixed-top" role="navigation" style="background-color: #795548;box-shadow:5px 0px 12px black;padding:3px;">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -54,18 +60,36 @@
                 <ul class="nav navbar-nav">
                     <li class="test"><a href="#home" style="color:#efebe9;">Home</a></li>
                     <li class="test">
-                        <a href="species.html" style="color:#efebe9;">精選介紹</a></li>
+                        <a href="#second" style="color:#efebe9;">精選介紹</a></li>
                     <li class="test">
-                        <a href="roast.html" style="color:#efebe9;">烘培藝術</a></li>
+                        <a href="#third" style="color:#efebe9;">烘培藝術</a></li>
                     <li class="test">
-                        <a href="coffee.html" style="color:#efebe9;">品味咖啡</a></li>
+                        <a href="#forth" style="color:#efebe9;">品味咖啡</a></li>
                     <li class="test">
                         <a href="master.html" style="color:#efebe9;">後記</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="home"></div>
+    <div id="home">
+        <!-- <div class="container-fluid">
+            <div class="row" style="padding-top:10px;">
+
+                <div class="col-md-5  col-md-offset-1 ">
+                    <img id="homeIcon" src="images/home_icon.png" />
+                </div>
+
+                <div class="col-md-5  col-md-offset-4">
+                    <img id="an" src="images/homeText.png" />
+                </div>
+            </div>
+        </div> -->
+        <img id="homeIcon" src="images/home_icon.png" />
+        <img id="an" src="images/homeText.png" />
+
+
+    </div>
+
     <div id="second"></div>
     <div id="third"></div>
     <div id="forth"></div>
