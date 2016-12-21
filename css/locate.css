@@ -33,4 +33,27 @@
         left: 50%;
         margin: -0px 0 0 -150px;
     }
+    .pag_bg1 {
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -200px 0 0 +300px;
+    }
+    .pag_bg2 {
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: +250px 0 0 +300px;
+        transform: rotate(+20deg);
+    }
+    .pag_bg3 {
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: +95px 0 0 +150px;
+        transform: rotate(-50deg);
+    }
 }
