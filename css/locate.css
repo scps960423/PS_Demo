@@ -47,6 +47,9 @@
     .pag_bg3:hover {
         transform: rotate(-10deg);
     }
+    #pag2_text {
+        font-size: 60px;
+    }
 }
 
 @media (min-width:920px) {
