@@ -40,6 +40,9 @@
         left: 50%;
         margin: -200px 0 0 +300px;
     }
+    .pag_bg1:hover {
+        transform: rotate(+10deg);
+    }
     .pag_bg2 {
         height: 30px;
         position: absolute;
@@ -48,6 +51,9 @@
         margin: +250px 0 0 +300px;
         transform: rotate(+20deg);
     }
+    .pag_bg2:hover {
+        transform: rotate(-10deg);
+    }
     .pag_bg3 {
         height: 50px;
         position: absolute;
@@ -55,5 +61,8 @@
         left: 50%;
         margin: +95px 0 0 +150px;
         transform: rotate(-50deg);
+    }
+    .pag_bg3:hover {
+        transform: rotate(-10deg);
     }
 }
