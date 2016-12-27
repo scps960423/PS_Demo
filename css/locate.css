@@ -97,4 +97,7 @@
     .pag_bg3:hover {
         transform: rotate(-10deg);
     }
+    #pag2_text {
+        padding-top: 5vh;
+    }
 }
