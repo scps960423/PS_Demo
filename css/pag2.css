@@ -1,0 +1,27 @@
+.p2_main {
+    color: #fff;
+    float: right;
+    display: none;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: #4d342f;
+    width: 700px;
+    margin: 0 10px 0 0;
+    opacity: 0.8;
+}
+
+.p2_but {
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    /*color: #4d342f;*/
+    color: #fff;
+    text-align: center;
+    background: #4d342f;
+    border: 0px;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.p2_but:hover {
+    color: #ffcc99;
+}
