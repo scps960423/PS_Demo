@@ -42,14 +42,16 @@ a:hover {
 }
 
 #second {
-    background: #ffcc99 50% 0 no-repeat fixed;
+    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
     background-size: cover;
     height: 100vh;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #third {
     background: url(images/pag_3.jpg) 50% 0 no-repeat fixed;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     color: white;
     height: 100vh;
     background-size: cover;
@@ -59,7 +61,7 @@ a:hover {
 
 #forth {
     background: url(images/pag_4.jpg) 50% 0 no-repeat fixed;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     background-size: cover;
     margin: 0 auto;
     padding: 0;
@@ -68,22 +70,25 @@ a:hover {
 }
 
 .p2_main {
-    color: #424242;
+    color: #fff;
     float: right;
     display: none;
     border: 0px solid;
     border-radius: 10px;
-    background-color: #fedca9;
+    background-color: #424242;
     width: 700px;
     margin: 0 10px 0 0;
+    opacity: 0.8;
 }
 
 .p2_1, .p2_2, .p2_3, .p2_4, .p2_5, .p2_6 {
     border: 2px #ccc solid;
     border-radius: 10px;
-    color: #4d342f;
+    /*color: #4d342f;*/
+    color: #fff;
     text-align: center;
-    background: #ffe57f;
+    background: #424242;
     border: 0px;
     z-index: 2;
+    opacity: 0.8;
 }
