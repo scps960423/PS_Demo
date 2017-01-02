@@ -5,6 +5,8 @@ $(document).ready(function() {
     $('#forth').parallax("50%", 0.3);
 });
 $(document).ready(function() {
+
+
     $(".test:eq(0)").click(function() {
         $("html,body").animate({
             "scrollTop": $("#home").offset().top
