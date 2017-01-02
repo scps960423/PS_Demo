@@ -5,6 +5,11 @@
 body {
     padding: 0;
     margin: 0;
+    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
 }
 
 #homeIcon {
@@ -36,7 +41,7 @@ a:hover {
 }
 
 #home {
-    background: #ffcc99 50% 0 no-repeat fixed;
+    /*background: #ffcc99 50% 0 no-repeat fixed;*/
     background-size: cover;
     height: 100vh;
 }
