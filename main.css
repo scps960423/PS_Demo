@@ -66,3 +66,24 @@ a:hover {
     color: white;
     height: 100vh;
 }
+
+.p2_main {
+    color: #424242;
+    float: right;
+    display: none;
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: #fedca9;
+    width: 700px;
+    margin: 0 10px 0 0;
+}
+
+.p2_1, .p2_2, .p2_3, .p2_4, .p2_5, .p2_6 {
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    color: #4d342f;
+    text-align: center;
+    background: #ffe57f;
+    border: 0px;
+    z-index: 2;
+}
