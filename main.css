@@ -75,7 +75,7 @@ a:hover {
     display: none;
     border: 0px solid;
     border-radius: 10px;
-    background-color: #424242;
+    background-color: #4d342f;
     width: 700px;
     margin: 0 10px 0 0;
     opacity: 0.8;
@@ -87,7 +87,7 @@ a:hover {
     /*color: #4d342f;*/
     color: #fff;
     text-align: center;
-    background: #424242;
+    background: #4d342f;
     border: 0px;
     z-index: 2;
     opacity: 0.8;
