@@ -26,6 +26,7 @@
 }
 
 .p3_but {
+    font-size: 45px;
     border: 0px #4d342f solid;
     /*border-radius: 10px;*/
     /*color: #4d342f;*/
@@ -36,13 +37,28 @@
     z-index: 2;
     opacity: 0.8;
     transition: background-color 0.5s;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .p3_but:hover {
     color: #4d342f;
     background-color: #efebe9;
-    /*box-shadow: inset 3px 3px 3px rgba(20%, 20%, 40%, 0.5);*/
-    /*box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.5) inset;*/
+    box-shadow: 4px 4px rgba(0, 0, 0, 0);
+}
+
+.p3_rwdMain li {
+    /*border: 0px #4d342f solid;*/
+    margin-left: -30px;
+    margin-top: +5px;
+    /*border-radius: 10px;*/
+    /*color: #4d342f;*/
+    color: #efebe9;
+    background: #8d6e63;
+    /*border: 0px;*/
+    /*z-index: 2;*/
+    opacity: 0.8;
+    transition: background-color 0.5s;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .circle {
