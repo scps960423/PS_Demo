@@ -3,10 +3,10 @@ $(document).ready(function() {
     $('#second').parallax("50%", 0.1);
     $('#third').parallax("50%", 0.1);
     $('#forth').parallax("50%", 0.3);
+
 });
+
 $(document).ready(function() {
-
-
     $(".test:eq(0)").click(function() {
         $("html,body").animate({
             "scrollTop": $("#home").offset().top

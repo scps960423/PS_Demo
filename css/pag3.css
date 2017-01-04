@@ -1,0 +1,67 @@
+.origin {
+    display: none;
+}
+
+.p3_but {
+    border: 0px #4d342f solid;
+    /*border-radius: 10px;*/
+    /*color: #4d342f;*/
+    color: #efebe9;
+    text-align: center;
+    background: #4d342f;
+    /*border: 0px;*/
+    z-index: 2;
+    opacity: 0.8;
+    transition: background-color 0.5s;
+}
+
+.p3_but:hover {
+    color: #4d342f;
+    background-color: #efebe9;
+    /*box-shadow: inset 3px 3px 3px rgba(20%, 20%, 40%, 0.5);*/
+    /*box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.5) inset;*/
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #4d342f;
+    float: right;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.speech-bubble {
+    display: none;
+    position: relative;
+    background-color: #434343;
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    /* 垂直居中 */
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-family: sans-serif;
+    transform: rotate(+15deg);
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 30px solid;
+}
+
+
+/* 箭头的位置 */
+
+.speech-bubble-right:after {
+    border-style: solid;
+    border-width: 30px 0 0 60px;
+    border-color: transparent transparent transparent #434343;
+    margin: 100px -50px 0 0;
+}

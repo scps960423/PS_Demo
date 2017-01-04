@@ -8,4 +8,7 @@ $(document).ready(function() {
             $(".p2_main:eq(" + e.data.id + ")").slideToggle("slow");
         });
     }
+    $(".circle").click(function() {
+        $(".p3_1").fadeToggle("slow");
+    })
 });
