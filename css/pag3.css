@@ -1,5 +1,28 @@
-.origin {
+@media (min-width:920px) {
+    #pag3_text {
+        text-align: center;
+        font-size: 75px;
+        padding-top: 5vh;
+        font-weight: bold;
+        color: #4d342f;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:919px) {
+    #pag3_text {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 5vh;
+        font-weight: bold;
+        color: #4d342f;
+    }
+}
+
+.p3_rwdMain {
     display: none;
+    text-align: left;
+    font-size: 20px;
+    /*background-color: #4d342f;*/
 }
 
 .p3_but {

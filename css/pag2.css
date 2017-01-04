@@ -27,11 +27,14 @@
     z-index: 2;
     opacity: 0.8;
     transition: background-color 0.5s;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .p2_but:hover {
     color: #4d342f;
     background-color: #efebe9;
+    margin: 4px 4px 0 0;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0);
     /*box-shadow: inset 3px 3px 3px rgba(20%, 20%, 40%, 0.5);*/
     /*box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.5) inset;*/
 }
