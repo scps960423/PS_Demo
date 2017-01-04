@@ -39,6 +39,7 @@
 
 @media screen and (min-width:300px) and (max-width:919px) {
     .p2_but {
+        font-size: 30px;
         border: 0px #4d342f solid;
         /*border-radius: 10px;*/
         /*color: #4d342f;*/
@@ -56,5 +57,17 @@
         background-color: #efebe9;
         /*margin: 0px 0px 0 0;*/
         box-shadow: 4px 4px rgba(0, 0, 0, 0);
+    }
+    .p2_main {
+        color: #fff;
+        width: 385px;
+        float: left;
+        margin: 0 0 0 12px;
+        padding: 2px 2px 0px 2px;
+        display: none;
+        border: 0px solid;
+        border-radius: 10px;
+        background-color: #4d342f;
+        opacity: 0.7;
     }
 }
