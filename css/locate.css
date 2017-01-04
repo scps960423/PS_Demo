@@ -22,17 +22,6 @@
         font-weight: bold;
         color: #4d342f;
     }
-    .p2_main {
-        color: #fff;
-        width: 385px;
-        float: left;
-        margin: 0 0 0 12px;
-        display: none;
-        border: 0px solid;
-        border-radius: 10px;
-        background-color: #4d342f;
-        opacity: 0.7;
-    }
 }
 
 @media (min-width:920px) {
