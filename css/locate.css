@@ -24,6 +24,8 @@
     }
     .p2_main {
         width: 385px;
+        float: left;
+        margin: 0 0 0 12px;
     }
 }
 
