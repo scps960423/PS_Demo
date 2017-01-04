@@ -218,8 +218,8 @@
                     <p class="p3_but">產地</p>
                     <div class="p3_rwdMain">
                         <ul style="list-style-type:none;">
-                            <li data-toggle="modal" data-target="#myModal">巴西</li>
-                            <li>哥倫比亞</li>
+                            <li data-remodal-target="modal">巴西</li>
+                            <li data-remodal-target="modal_2">哥倫比亞</li>
                             <li>印尼</li>
                             <li>衣索比亞</li>
                             <li>肯亞</li>
@@ -260,23 +260,32 @@
 
 
 
-        <div class="remodal-bg">
+        <!-- <div class="remodal-bg">
             <a href="#" data-remodal-target="modal">Call</a>
-        </div>
+        </div> -->
 
         <div class="remodal" data-remodal-id="modal">
             <!-- <a data-remodal-action="close" class="remodal-close"></a> -->
-            <h1>標題</h1>
+            <h3>巴西</h3>
             <p>
-                內文
+                大部分產羅布斯塔，口感濃烈，有巧克力餘味。<br/> 大賣場的咖啡產品通常來自巴西。
             </p>
             <br>
             <!-- <a data-remodal-action="cancel" class="remodal-cancel" href="#">取消</a> -->
-            <a data-remodal-action="confirm" class="remodal-confirm" href="#">確定</a>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
         </div>
 
-        <div id="target"></div>
-
+        <!-- <div id="target"></div> -->
+        <div class="remodal" data-remodal-id="modal_2">
+            <!-- <a data-remodal-action="close" class="remodal-close"></a> -->
+            <h3>哥倫比亞</h3>
+            <p>
+                味道比較淡，平衡度好，低酸度，餘味有果香。在美國比較流行。
+            </p>
+            <br>
+            <!-- <a data-remodal-action="cancel" class="remodal-cancel" href="#">取消</a> -->
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
 
 
 
