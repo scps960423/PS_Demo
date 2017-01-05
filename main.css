@@ -3,13 +3,8 @@
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
-    background-size: cover;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #homeIcon {
@@ -32,6 +27,7 @@ body {
 }
 
 #home {
+    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
     /*background: #ffcc99 50% 0 no-repeat fixed;*/
     background-size: cover;
     height: 100vh;
@@ -63,4 +59,7 @@ body {
     padding: 0;
     /*color: white;*/
     height: 100vh;
+}
+
+
 }
