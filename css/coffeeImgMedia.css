@@ -1,4 +1,4 @@
-@media screen and (min-width:300px) and (max-width:919px) {
+@media screen and (min-width:300px) and (max-width:720px) {
     .pag_bg1 {
         height: 50px;
         position: absolute;
@@ -6,6 +6,7 @@
         left: 50%;
         margin: -250px 0 0 +150px;
         z-index: 1;
+        display: none;
     }
     .pag_bg1:hover {
         transform: rotate(+10deg);
@@ -18,6 +19,7 @@
         margin: +300px 0 0 +30px;
         transform: rotate(+20deg);
         z-index: 1;
+        display: none;
     }
     .pag_bg2:hover {
         transform: rotate(-10deg);
@@ -30,13 +32,14 @@
         margin: +95px 0 0 -250px;
         transform: rotate(-50deg);
         z-index: 1;
+        display: none;
     }
     .pag_bg3:hover {
         transform: rotate(-10deg);
     }
 }
 
-@media (min-width:920px) {
+@media (min-width:720px) {
     .pag_bg1 {
         height: 50px;
         position: absolute;
