@@ -40,10 +40,14 @@
     <link rel="stylesheet" href="dist/remodal-default-theme.css">
 
     <script type="text/javascript">
+        var width = screen.width;
         $(function() {
-            $('.test').on('click', function() {
-                $('.navbar-toggle').click();
-            });
+            if (width <= 720) {
+                $('.test a').on('click', function() {
+                    $('.navbar-toggle').click();
+                });
+
+            }
         });
     </script>
 
@@ -414,14 +418,64 @@
             <p id="pag3_text">豆の烘焙</p>
         </div>
 
-        <div class="p4_main">
+        <div class="container-fluid">
+            <div class="row" style="padding-top:10px;">
+
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c01.png" class="p4_cof">
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c02.png" class="p4_cof">
+
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c03.png" class="p4_cof">
+
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c04.png" class="p4_cof">
+
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c05.png" class="p4_cof">
+
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c06.png" class="p4_cof">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="p4_main">
             <h3>&emsp;為什麼咖啡會這麼香？</h3>
             <p class="text-justify lead" style="font-size:20px;">
 
                 <br>&emsp;&emsp;最重要的當然是咖啡豆本身就儲存了豐富的各種原料 ，如碳水化合物、蛋白質、脂類、有機酸等…… 再經過受熱烘培就會啟動一連串複雜的反應，而造就出誘 人的香氣。
                 <br>&emsp;&emsp;而當中重要的兩種反應當屬焦糖化反應（caramelization，醣的氧化與褐變） 與梅納反應（Maillard reaction，胺基酸與醣類的反應） 這兩種反應都需要醣類的參與，生豆中含量豐富的蔗糖， 正好提供了這兩種反應所需的材料。 先前的研究也發現蔗糖含量與咖啡豆風味有著正向的相關性。 從下表中可以看出阿拉比卡（Arabica）的蔗糖（Sucrose） 在生豆時含量是羅布斯塔（Robusta）的兩倍， 也說明了阿拉比卡種的咖啡豆風味優於羅布斯塔的原因。
             </p>
-        </div>
+        </div> -->
     </div>
 
 
