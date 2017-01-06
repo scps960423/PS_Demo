@@ -21,7 +21,7 @@
     <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
     <script type="text/javascript" src="js/mobile.js"></script>
     <script type="text/javascript" src="js/pag2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>v
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -38,6 +38,14 @@
     <script src="dist/remodal.js"></script>
     <link rel="stylesheet" href="dist/remodal.css">
     <link rel="stylesheet" href="dist/remodal-default-theme.css">
+
+    <script type="text/javascript">
+        $(function() {
+            $('.test').on('click', function() {
+                $('.navbar-toggle').click();
+            });
+        });
+    </script>
 
 </head>
 
