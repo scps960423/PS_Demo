@@ -31,6 +31,7 @@ body {
     /*background: #ffcc99 50% 0 no-repeat fixed;*/
     background-size: cover;
     height: 100vh;
+    width: 100vh;
 }
 
 #second {
@@ -39,6 +40,7 @@ body {
     height: 100vh;
     margin: 0 auto;
     padding: 0;
+    width: 100vh;
 }
 
 #third {
@@ -49,6 +51,7 @@ body {
     background-size: cover;
     margin: 0 auto;
     padding: 0;
+    width: 100vh;
 }
 
 #forth {
@@ -59,7 +62,5 @@ body {
     padding: 0;
     /*color: white;*/
     height: 100vh;
-}
-
-
+    width: 100vh;
 }
