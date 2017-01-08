@@ -19,6 +19,14 @@ $(document).ready(function() {
         });
     }
 
+    $(".p4_c:eq(0)").click(function() {
+
+        // if (i != e.data.id) $(".p3_rwdMain:eq(" + i + ")").slideUp("slow");
+        $(".p4_main_1").slideToggle("slow");
+
+    });
+
+
 
 
 });

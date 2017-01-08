@@ -1,4 +1,14 @@
 @media (min-width:920px) {
+    .p4_main_1 {
+        display: none;
+        color: #fff;
+        background-color: #4d342f;
+        width: 100px;
+        height: 200px;
+        margin: +120px 0 0 +28px;
+        padding: 50px 5px 0px 5px;
+        opacity: 0.8;
+    }
     .p4_main {
         color: #fff;
         /*float: left;*/
