@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('#second').parallax("50%", 0.1);
     $('#third').parallax("50%", 0.1);
     $('#forth').parallax("50%", 0.3);
+    $('#five').parallax("50%", 0.3);
 
 });
 
@@ -25,6 +26,11 @@ $(document).ready(function() {
     $(".test:eq(3)").click(function() {
         $("html,body").animate({
             "scrollTop": $("#forth").offset().top
+        })
+    })
+    $(".test:eq(4)").click(function() {
+        $("html,body").animate({
+            "scrollTop": $("#five").offset().top
         })
     })
 })
