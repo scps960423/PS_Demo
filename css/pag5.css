@@ -24,7 +24,7 @@
         line-height: 80px;
         font-size: 30px;
         height: 180px;
-        width: 900px;
+        width: 850px;
         background: #ffffff;
         position: absolute;
         top: 400%;
@@ -39,12 +39,12 @@
         line-height: 80px;
         font-size: 30px;
         height: 180px;
-        width: 900px;
+        width: 850px;
         background: #ffffff;
         position: absolute;
         top: 400%;
         left: 50%;
-        margin: +410px 0 0 -410px;
+        margin: +420px 0 0 -410px;
         opacity: 0.7;
         z-index: 1;
     }
@@ -155,7 +155,7 @@
         opacity: 0.7;
         z-index: 1;
     }
-    .five_main_1 p {
+    .five_main_1 p, .five_main_2 p {
         font-size: 15px;
     }
 }
