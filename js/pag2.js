@@ -18,15 +18,31 @@ $(document).ready(function() {
             $(".p3_rwdMain:eq(" + e.data.id + ")").slideToggle("slow");
         });
     }
+    //
+    // $(".p4_c:eq(0)").click(function() {
+    //
+    //     // if (i != e.data.id) $(".p3_rwdMain:eq(" + i + ")").slideUp("slow");
+    //     $(".p4_main_1").slideToggle("slow");
+    //
+    // });
+    for (var j = 0; j < 6; j++) {
+        $(".p4_c:eq(" + j + ")").click({
+            id: j
+        }, function(e) {
+            // for (var i = 0; i <= 6; i++)
+            //     if (i != e.data.id) $(".p4_main_1:eq(" + i + ")").slideUp("slow");
+            $(".p4_main_1:eq(" + e.data.id + ")").slideToggle("slow");
+        });
+    }
 
-    $(".p4_c:eq(0)").click(function() {
-
-        // if (i != e.data.id) $(".p3_rwdMain:eq(" + i + ")").slideUp("slow");
-        $(".p4_main_1").slideToggle("slow");
-
-    });
-
-
-
+    for (var j = 0; j < 6; j++) {
+        $(".p4_but:eq(" + j + ")").click({
+            id: j
+        }, function(e) {
+            for (var i = 0; i <= 5; i++)
+                if (i != e.data.id) $(".p4_main:eq(" + i + ")").slideUp("slow");
+            $(".p4_main:eq(" + e.data.id + ")").slideToggle("slow");
+        });
+    }
 
 });

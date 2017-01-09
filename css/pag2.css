@@ -94,6 +94,8 @@
         box-shadow: 4px 4px rgba(0, 0, 0, 0);
     }
     .p2_main {
+        overflow: auto;
+        height: 300px;
         color: #fff;
         max-width: 95%;
         /*float: left;*/
