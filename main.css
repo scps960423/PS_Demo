@@ -4,6 +4,9 @@
 
 body {
     font-family: LiHei Pro, Microsoft JhengHei;
+    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
@@ -28,7 +31,7 @@ body {
 }
 
 #home {
-    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
+    /*background: url(images/pag_2.png) 50% 0 no-repeat fixed;*/
     /*background: #ffcc99 50% 0 no-repeat fixed;*/
     background-size: cover;
     height: 100vh;
@@ -36,7 +39,7 @@ body {
 }
 
 #second {
-    background: url(images/pag_2.png) 50% 0 no-repeat fixed;
+    /*background: url(images/pag_2.png) 50% 0 no-repeat fixed;*/
     background-size: cover;
     height: 100vh;
     margin: 0 auto;
