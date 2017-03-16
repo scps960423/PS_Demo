@@ -5,74 +5,553 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coffee Parallax Scrolling</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="jquery-parallax-1/scripts/jquery.localscroll-1.2.7-min.js"></script>
-    <script src="jquery-parallax-1/scripts/jquery.parallax-1.1.3.js"></script>
-    <script src="jquery-parallax-1/scripts/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript">
-        $(#intro).parallax("50%", 0.1);
-        $(#second).parallax("50%", 0.1);
-        //    $('.bg').parallax("50%", 0.4);
-        $(#third).parallax("50%", 0.3);
-    </script>
+    <title>Coffee</title>
+    
+    <link rel="Shortcut Icon" type="image/x-icon" href="images/coffeeIcon.ico">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css"> -->
 
-    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="js/mobile.js"></script>
+    <script type="text/javascript" src="js/pag2.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>v
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/pag2.css">
+    <link rel="stylesheet" href="css/locate.css">
+    <link rel="stylesheet" href="css/coffeeImgMedia.css">
+    <link rel="stylesheet" href="css/pag3.css">
+    <link rel="stylesheet" href="css/pag4.css">
+    <link rel="stylesheet" href="css/pag5.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script src="dist/jquery-loader.js"></script>
+    <script src="dist/remodal.js"></script>
+    <link rel="stylesheet" href="dist/remodal.css">
+    <link rel="stylesheet" href="dist/remodal-default-theme.css">
+
+    <script type="text/javascript">
+        var width = screen.width;
+        if (width <= 720) {
+            $(function() {
+                $('.test a').on('click', function() {
+                    $('.navbar-toggle').click();
+                });
+            })
+        }
+    </script>
+
+
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Logo</a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
+    <nav class="navbar-default navbar-fixed-top" role="navigation" style="background-color: #4d342f;box-shadow:5px 0px 12px black;padding:3px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="color:#efebe9;">
+                    <nobr><img src="images/coffees.png" style="height:25px;wight:25px;" /></nobr>
+                    <nobr>豆</nobr>
+                </a>
+                <button type="button" id="hello" name="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="border:2px blue none;">
+                  <span class="sr-only" style="background-color: #efebe9;">Toggle navigation</span>
+                  <span class="icon-bar" style="background-color: #efebe9;"></span>
+                  <span class="icon-bar" style="background-color: #efebe9;"></span>
+                  <span class="icon-bar" style="background-color: #efebe9;"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="test">
+                        <a href="#home">
+                            <div class="text">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li class="test">
+                        <a href="#second">
+                            <div class="text">
+                                精選介紹
+                            </div>
+                        </a>
+                    </li>
+                    <li class="test">
+                        <a href="#third">
+                            <div class="text">
+                                美味過程
+                            </div>
+                        </a>
+                    </li>
+                    <li class="test">
+                        <a href="#forth">
+                            <div class="text">
+                                烘焙藝術
+                            </div>
+                        </a>
+                    </li>
+                    <li class="test">
+                        <a href="#">
+                            <div class="text">
+                                後記
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div id="intro">
+    <div id="home">
+
+        <img class="pag_bg1" src="images/coffees.png">
+        <img class="pag_bg2" src="images/coffees.png">
+        <img class="pag_bg3" src="images/coffees.png">
+        <img id="homeIcon" src="images/home_icon.png" />
+        <img id="an" src="images/homeText.png" />
+
 
     </div>
 
     <div id="second">
-        second
+        <div class="container-fluid">
+            <div class="row" style="padding-top:10px;">
 
-        <!-- <img src="images/coffee.png" />
-        <img src="images/coffee.png" /> -->
+                <div class="col-md-8 col-md-offset-4">
+                    <p id="pag2_text">百種の豆</p>
+                </div>
+                <div class="col-md-2 col-xs-6 pag2_coffee">
+                    <p class="p2_but">曼特寧</p>
+                </div>
+                <div class="col-md-2 col-xs-6  pag2_coffee">
+                    <p class="p2_but">巴西</p>
+                </div>
+                <div class="col-md-2 col-xs-6  pag2_coffee">
+                    <p class="p2_but">哥倫比亞</p>
+                </div>
+                <div class="col-md-2 col-xs-6 pag2_coffee">
+                    <p class="p2_but">瓜地馬拉</p>
+                </div>
+                <div class="col-md-2 col-xs-6  pag2_coffee">
+                    <p class="p2_but">爪哇</p>
+                </div>
+                <div class="col-md-2 col-xs-6 pag2_coffee">
+                    <p class="p2_but">藍山</p>
+                </div>
+            </div>
+        </div>
+        <div class="p2_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                &emsp;&emsp;在藍山尚未公諸於世時，曼特寧咖啡是被認為世界第一優良品，風味特殊，質感濃郁，芳香，沒有柔和的酸味，強烈的苦味是它獨到之處 ，而且它的醇度特強，一般都是單品種飲用， 但 調配合綜合咖啡時，也是不可或缺的品種。
+                <br>&emsp;&emsp;故多年來一直是綜合咖啡的主要支柱， 對於不喜歡有酸味的咖啡的人，是一項很好的選擇， 曼特寧和爪哇相同的產於印尼產地，但曼特寧品質較穩定， 為蘇門答臘中最具代表性的咖啡， 豆粒甚大，呈黃色或褐色，生產量比較少，故價錢高。
+            </p>
+        </div>
+        <div class="p2_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                &emsp;&emsp;中間的裂紋呈褐色，因為當地豆子多以日曬法處理 ，巴西所產之咖啡，屬中性咖啡豆，味道上的特色是平板中性， 整體而言味道柔和不偏苦也不偏酸，被譽為咖啡之中堅。 &emsp;&emsp;常被用來和其它咖啡豆混合，例如以巴西與曼特寧各半調製之曼巴咖啡就廣受大眾喜愛 ，因巴西豆具有其特殊的風味，不被買家喜好，常在咖啡豆產量少時被當成替代品。
+            </p>
+        </div>
+        <div class="p2_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                &emsp;&emsp;哥倫比亞咖啡中以斯普雷墨SUPREMO最具特色， 屬軟性口種，高均衡度，具高度香氣，良質的酸度及甘甜味， 整體而言是具有酸中帶甘，苦味中平之良質特性,尤其異香撲鼻， 風味奇佳，其品質及香味穩定，有股地瓜皮的奇特風味，色如釀好的酒， 乃咖啡中之佼佼者。 <br/> &emsp;&emsp;咖啡豆中間裂紋呈白色，因為當地生產的豆子以水洗居多， 特色是在於他的酸度和均衡的風味。
+            </p>
+        </div>
+        <div class="p2_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                &emsp;&emsp;瓜地馬拉咖啡豆的豆表光滑硬度高，微酸香醇且順口， 特殊的煙燻味極為誘人，味道香醇而稍具野性，是混合式咖啡的最佳材料， 其分類依海拔標高分為七個等級。產於高地者越香醇，而產於低地的咖啡豆，品質則較低落。
+                <br/>&emsp;&emsp;瓜地馬拉為日本人最熟悉的咖啡豆，第一產地位於緊臨墨西哥山嶽地帶的聖馬爾克斯; 第二產地為南部的凱薩兒德南哥。其他尚有戈邦、安地古亞也很有名， 這種咖啡豆的特色在於醇度很高，在單品中僅次於曼特寧
+            </p>
+        </div>
+        <div class="p2_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                &emsp;&emsp;作為調配綜合咖啡最理想的豆子，其酸性極少，苦味強烈，煎焙較淺薄，則有如大豆之味， 煎焙過度則苦味娛強，因此最適合配合使用， 為了提昇風味的豐富性，純品飲者較少，是南洋咖啡之代表品種。 綜合咖啡若調上羅姆斯達咖啡，可使咖啡濃度增強,甘味增加。
+                <br/>&emsp;&emsp;羅姆斯達是產於印尼的豆子，爪哇已成為一個咖啡中心，味苦而香醇濃郁， 印尼豆帶土氣，配合狂野、醇酒般的葉門摩卡豆是不錯的組合，從前爪哇是阿拉伯種，現在的是羅姆斯達種， 在1920年發生了病害，大多數生產園荒廢，從那以後改種抵抗力強的羅姆斯達種。
+            </p>
+        </div>
+        <div class="p2_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                &emsp;&emsp;藍山咖啡香味較淡，喝起來卻非常香醇滑口，沒有苦苦的味道， 但它卻帶了一點點的酸，馥郁的果香，優質且均衡的內容，一般都單品種飲用， 乃咖啡中最好品種。 藍山咖啡豆的形狀飽滿， 而且平均比一般豆子還要大，中間的白色裂紋，是經過水洗的處理， 產自牙買加藍山海拔2500尺以上的斜坡上，屬於咖啡中的極品，價位也是最高的一種。
+            </p>
+        </div>
+
+        <img class="pag_bg1" style="top:130%;" src="images/coffees.png">
+
     </div>
-
     <div id="third">
-        third
-        <!--
-        <img src="images/coffee.png" />
-        <img src="images/coffee.png" /> -->
+        <div class="container-fluid">
+            <div class="row" style="padding-top:10px;">
+                <div class="col-md-12  ">
+                    <p id="pag3_text">豆の影響因素</p>
+                </div>
+                <div class="col-md-2 col-md-offset-3 ">
+                    <p class="p3_but">產地</p>
+                    <div class="p3_rwdMain">
+                        <ul style="list-style-type:none;">
+
+                            <a href="#">
+                                <li data-remodal-target="modal_1">巴西</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_2">哥倫比亞</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_3">印尼</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_4">衣索比亞</li>
+
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_5">肯亞</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_6">夏威夷</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <p class="p3_but">處理</p>
+                    <div class="p3_rwdMain">
+                        <ul style="list-style-type:none;">
+                            <a href="">
+                                <li data-remodal-target="modal_7">日曬法</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_8">水洗法</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_9">半日曬法</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_10">半水洗法</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-2 ">
+                    <p class="p3_but">烘培</p>
+                    <div class="p3_rwdMain">
+                        <ul style="list-style-type:none;">
+                            <a href="#">
+                                <li data-remodal-target="modal_11">極淺焙</li>
+
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_12">淺焙</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_13">中焙</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_14">中深焙</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_15">程式烘焙</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_16">深焙</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_17">法式烘焙</li>
+                            </a>
+                            <a href="#">
+                                <li data-remodal-target="modal_18">重焙</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- <div class="remodal-bg">
+            <a href="#" data-remodal-target="modal">Call</a>
+        </div> -->
+
+        <div class="remodal" data-remodal-id="modal_1">
+            <!-- <a data-remodal-action="close" class="remodal-close"></a> -->
+            <h3>巴西</h3>
+            <p>
+                大部分產羅布斯塔，口感濃烈，有巧克力餘味。<br/> 大賣場的咖啡產品通常來自巴西。
+            </p>
+            <br>
+            <!-- <a data-remodal-action="cancel" class="remodal-cancel" href="#">取消</a> -->
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+
+
+        <div class="remodal" data-remodal-id="modal_2">
+            <h3>哥倫比亞</h3>
+            <p>味道比較淡，平衡度好，低酸度，餘味有果香。在美國比較流行。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+
+        <div class="remodal" data-remodal-id="modal_3">
+            <h3>印尼</h3>
+            <p>有泥土芳香或煙熏味，有苦可可餘味，醇度厚實</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_4">
+            <h3>衣索比亞</h3>
+            <p>咖啡原產地，種類多樣性高。許多被形容有糖漿味，並有草莓或藍莓的餘味</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_5">
+            <h3>肯亞</h3>
+            <p>味道厚實，有點番茄酸味</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_6">
+            <h3>夏威夷</h3>
+            <p>帶甜香、溫和、香醇、柔潤</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+
+        <!-- 處理過程         -->
+        <div class="remodal" data-remodal-id="modal_7">
+            <h3>日曬法</h3>
+            <p>日曬法是最古老、省事的生豆處理法</p>
+            <p>一.篩除浮豆</p>
+            <p>二.日曬乾燥</p>
+            <p>三.去殼</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_8">
+            <h3>水洗法</h3>
+            <p>水洗法是目前較普遍的生豆處理法。 <br> 一.篩除浮豆
+                <br> 二.去果肉 <br> 三.發酵去果膠 <br> 四.乾燥
+            </p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_9">
+            <h3>半日曬法</h3>
+            <p>傳統日曬法區域提高日曬豆品質的改良處理法 <br> 一.篩除浮豆 (同日曬法) <br> 二.去果肉(同水洗法) <br> 三.日曬乾燥 四.熟成 <br>
+            </p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_10">
+            <h3>半水洗法</h3>
+            <p>降低傳統水洗法耗用水量的改良處理法 <br> 一.篩除浮豆 <br> 二.去果肉 <br> 三.機器去果膠 <br> 四.乾燥
+            </p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+
+        <!-- 烘焙 -->
+
+        <div class="remodal" data-remodal-id="modal_11">
+            <h3>極淺焙_light roast</h3>
+            <p>有濃厚的青草味，香氣不足，很少用來品嚐。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_12">
+            <h3>淺焙_cinnamon roast</h3>
+            <p>酸度高，略帶香氣，常用來沖美式咖啡。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_13">
+            <h3>中焙_medium roast</h3>
+            <p>口感偏酸帶苦，香氣適中，保留咖啡豆的原始風味，常用來做美式咖啡或混合咖啡。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_14">
+            <h3>中深焙_high roast</h3>
+            <p>口感層次豐富、酸苦均衡且略帶甜味，香氣風味都好。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_15">
+            <h3>城市烘焙_city roast</h3>
+            <p>比中深焙的酸度低一些，完美展現咖啡的風味，是標準的烘焙程度，最受一般大眾歡迎。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_16">
+            <h3>深焙_full city roast</h3>
+            <p>苦味比酸味強，餘味回甘，香氣飽滿，多用來做冰咖啡或黑咖啡。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_17">
+            <h3>法式烘焙_French roast</h3>
+            <p>苦味濃、味道強烈，沒什麼酸味，帶有煙熏香氣。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+        <div class="remodal" data-remodal-id="modal_18">
+            <h3>重焙_Italian roast</h3>
+            <p>豆子表面有油光，苦味強，有焦味，主要用來做義式濃縮咖啡。</p>
+            <br>
+            <a data-remodal-action="confirm" class="remodal-confirm" href="#">OK</a>
+        </div>
+
+    </div>
+    <div id="forth">
+
+        <div class="col-md-12">
+            <p id="pag3_text">豆の烘焙</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" style="padding-top:10px;">
+
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c01.png" class="p4_cof">
+
+                    </div>
+                    <div class="p4_main_1">
+                        將會影響品質的豆子挑出來
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c02.png" class="p4_cof">
+                    </div>
+                    <div class="p4_main_1">
+                        開始烘焙！進豆前要先預熱鍋爐
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c03.png" class="p4_cof">
+                    </div>
+                    <div class="p4_main_1">
+                        豆子在這個時候開始吸熱
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c04.png" class="p4_cof">
+                    </div>
+                    <div class="p4_main_1">
+                        加熱！要讓火力加熱到一定程度
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c05.png" class="p4_cof">
+                    </div>
+                    <div class="p4_main_1">
+                        等待一爆，依豆色評估烘焙程度
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="p4_c">
+                        <img src="images/coffee_p4/c06.png" class="p4_cof">
+                    </div>
+                    <div class="p4_main_1">
+                        下豆後冷卻
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" style="padding-top:10px;">
+
+
+                <div class="col-md-2 col-xs-6 pag2_coffee">
+                    <p class="p4_but">挑豆</p>
+                </div>
+                <div class="col-md-2 col-xs-6  pag2_coffee">
+                    <p class="p4_but">進豆</p>
+                </div>
+                <div class="col-md-2 col-xs-6  pag2_coffee">
+                    <p class="p4_but">吸熱</p>
+                </div>
+                <div class="col-md-2 col-xs-6 pag2_coffee">
+                    <p class="p4_but">加熱</p>
+                </div>
+                <div class="col-md-2 col-xs-6  pag2_coffee">
+                    <p class="p4_but">等待一爆</p>
+                </div>
+                <div class="col-md-2 col-xs-6 pag2_coffee">
+                    <p class="p4_but">下豆</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p4_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                要烘培出一鍋好豆子，對豆子的品質斤斤計較是一定要的。烘豆前要將已被昆蟲蛀食過的死果實如黑豆、或碎豆、變色豆、過小或是過大的豆子…等等會影響烘培品質的豆子挑掉，挑豆子的過程可長可短，由於需要注意力集中才能將爛豆挑出來，這可是需要耐心及眼力的重責大任呢！
+            </p>
+        </div>
+
+        <div class="p4_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                進鍋爐現在要開始烘培囉！進豆前先預熱鍋爐，就可以將預備區的豆子倒入鍋爐內。
+            </p>
+        </div>
+        <div class="p4_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                豆子在這個階段開始吸熱，吸熱的時間長短各家咖啡店都有些許不同，也算是烘培師傅個人的手法。
+            </p>
+        </div>
+        <div class="p4_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                吸熱完全後就點火準備加熱，這個時期要讓火力加熱到一定程度，直接跟火力相關的就是調整風門，至於火力的大小也是每家烘培商各有不同。咖啡豆的火力大小及時間長短都會直接影響咖啡的味道，因為咖啡的產區極多，每個產區的豆性都不同，所以咖啡要烘得好喝，也跟烘培師傅對豆種豆性的了解程度有絕對的關係。 </p>
+        </div>
+        <div class="p4_main">
+            <p class="text-justify lead" style="font-size:20px;">
+
+                這個階段中，師傅會在烘培過程中經由烘豆機前方的取豆棒觀看豆色，依豆色評估咖啡豆的烘培程度，鍋爐內約於200度就會產生一爆，聽聲音就知道了，聽到一爆後要看咖啡豆的豆性及每批豆子的含水量作細微的火力調整。</p>
+        </div>
+        <div class="p4_main">
+            <p class="text-justify lead" style="font-size:20px;">
+                下豆點同樣與咖啡豆的風味特色及含水量相關。 都堤咖啡的咖啡豆烘培標準，是採取國際上咖啡界中執牛耳的SCAA美國精選咖啡協會的八大標準。 下豆後冷卻然後再次挑豆。
+            </p>
+        </div>
+
+
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
 
-</html>
-tstrap.min.js"></script>
+    <div id="five">
+
+
+        <img src="images/le.jpg" class="dL le">
+        <div class="five_main_1">
+            <strong>LELE</strong>
+            <p>目標：跑遍高雄的咖啡館</p>
+        </div>
+
+        <img src="images/lun.jpg " class="dL lun ">
+        <div class="five_main_2 ">
+            <strong>LUN</strong><br>
+            <p>跑咖啡廳跑到咖啡中毒了</p>
+        </div>
+    </div>
 </body>
 
 </html>
