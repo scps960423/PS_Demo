@@ -1,0 +1,82 @@
+＊ {
+  height: 100%;
+}
+
+body {
+  font-family: LiHei Pro, Microsoft JhengHei;
+  background: url(images/pag_2.png) 50% 0 no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#homeIcon, #an {
+  float: left;
+}
+
+.text {
+  font-size: 15px;
+  color: #efebe9;
+
+  /*transition: background-color 0.5s;*/
+
+  &:hover {
+    /*text-shadow: 3px 3px 3px #000000;*/
+    text-shadow: 0px 0px 15px #efebe9;
+  }
+}
+
+#home {
+  /*background: url(images/pag_2.png) 50% 0 no-repeat fixed;*/
+  /*background: #ffcc99 50% 0 no-repeat fixed;*/
+  background-size: cover;
+  height: 100vh;
+
+  /*width: 100%;*/
+}
+
+#second {
+  /*background: url(images/pag_2.png) 50% 0 no-repeat fixed;*/
+  background-size: cover;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+
+  /*width: 100vh;*/
+}
+
+#third {
+  background: url(images/pag_3_2.jpg) 50% 0 no-repeat fixed;
+
+  /*opacity: 0.7;*/
+  /*color: white;*/
+  height: 100vh;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+
+  /*width: 100vh;*/
+}
+
+#forth {
+  background: url(images/pag_4_1.jpg) 50% 0 no-repeat fixed;
+
+  /*opacity: 0.7;*/
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+
+  /*color: white;*/
+  height: 100vh;
+
+  /*width: 100vh;*/
+}
+
+#five {
+  background: url(images/pag_5.jpg) 50% 0 no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+
+  /*width: 100%;*/
+}

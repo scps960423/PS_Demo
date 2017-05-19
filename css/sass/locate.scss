@@ -1,0 +1,57 @@
+@media screen and (min-width: 300px) and (max-width: 919px) {
+  #homeIcon {
+    height: 250px;
+    width: 245px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -120px;
+  }
+
+  #an {
+    height: 26px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: +150px 0 0 -140px;
+  }
+
+  #pag2_text {
+    text-align: center;
+    font-size: 75px;
+    padding-top: 5vh;
+    font-weight: bold;
+    color: #4d342f;
+  }
+}
+
+@media (min-width: 920px) {
+  #homeIcon {
+    height: 472px;
+    width: 462px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -500px;
+  }
+
+  #an {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0px 0 0 -150px;
+  }
+
+  #pag2_text {
+    padding-top: 5vh;
+    font-size: 100px;
+    font-weight: bold;
+    color: #4d342f;
+  }
+
+  .pag2_coffee {
+    font-size: 30px;
+  }
+}

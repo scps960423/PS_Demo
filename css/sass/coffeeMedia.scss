@@ -1,0 +1,91 @@
+@media screen and (min-width: 300px) and (max-width: 720px) {
+  .pag_bg1 {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 +150px;
+    z-index: 1;
+    display: none;
+
+    &:hover {
+      transform: rotate(+10deg);
+    }
+  }
+
+  .pag_bg2 {
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: +300px 0 0 +30px;
+    transform: rotate(+20deg);
+    z-index: 1;
+    display: none;
+
+    &:hover {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .pag_bg3 {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: +95px 0 0 -250px;
+    transform: rotate(-50deg);
+    z-index: 1;
+    display: none;
+
+    &:hover {
+      transform: rotate(-10deg);
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .pag_bg1 {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 +300px;
+    z-index: 1;
+    transition: height 1s;
+
+    &:hover {
+      /*transform: rotate(+10deg);*/
+      height: 55px;
+      transform: rotate(-50deg);
+    }
+  }
+
+  .pag_bg2 {
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: +250px 0 0 +300px;
+    transform: rotate(+20deg);
+    z-index: 1;
+
+    &:hover {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .pag_bg3 {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: +95px 0 0 +150px;
+    transform: rotate(-50deg);
+    z-index: 1;
+
+    &:hover {
+      transform: rotate(-10deg);
+    }
+  }
+}
